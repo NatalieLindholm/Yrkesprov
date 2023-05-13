@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Josefin Sans, sans-serif;
+}
+
+body {
+    background-color: #B8CDF1;
+}
+
+#navbar {
+    background-color: #F5F5F5;
+    height: 140px;
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    height: 105px;
+    width: 105px;
+    border-radius: 50px;
+
+    margin: 0px 20px 0px 30px;
+}
+
+#logoText {
+    font-size: 2.9rem;
+
+    margin-top: 32px;
+}
+
+#lang {
+    font-size: 2rem;
+
+    margin-top: 30px;
+}
+
+#lang:hover {
+    color: rgb(170, 170, 170);
+}
+
+#logIn {
+    color: #F5F5F5;
+    background-color: #B8CDF1;
+
+    border: none;
+    border-radius: 10px;
+
+    height: 80px;
+    width: 150px;
+
+    margin: 0px 50px 0px 50px;
+    padding-top: 5px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158)
+}
+
+#logIn:hover,
+#buy:hover,
+#close:hover,
+#delete:hover {
+    background-color: #92b8f9;
+}
+
+#basket {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #F5F5F5;
+    color: #B8CDF1;
+
+    border: solid rgba(0, 0, 0, 0.088) 1px;
+
+    border-radius: 50px;
+
+    height: 100px;
+    width: 100px;
+
+    margin: 20px;
+
+    padding-top: 5px;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#basket:hover {
+    background-color: #e8e6e6;
+}
+
+#item {
+    background-color: #F5F5F5;
+
+    height: 90px;
+    width: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+
+    margin: 30px 0px 20px 0px;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+
+    border: none;
+    border-radius: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+#row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding: 0px 40px;
+
+    width: 100%;
+}
+
+#sellItem {
+    background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px;
+
+    height: 450px;
+    width: 300px;
+
+    border-radius: 10px;
+}
+
+#produkt {
+    width: 250px;
+    height: 320px;
+
+    margin: 25px 0px 20px 0px;
+
+    border-radius: 10px;
+}
+
+#buy {
+    width: 120px;
+    height: 60px;
+
+    color: #F5F5F5;
+    background-color: #B8CDF1;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 2rem;
+
+    margin: 0px 0px 0px 20px;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+}
+
+#price {
+    font-size: 2em;
+    margin-top: 18px;
+}
+
+.flexing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    width: 1200px;
+
+    background-color: #F5F5F5;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemsClicked {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+#titleBox {
+    width: 900px;
+    height: 90px;
+
+    color: #F5F5F5;
+    background-color: #B8CDF1;
+
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3.8rem;
+
+    margin: 20px;
+    padding-top: 5px;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+}
+
+.buttons {
+    margin: 10px;
+}
+
+#close {
+    width: 120px;
+    height: 80px;
+
+    color: #F5F5F5;
+    background-color: #B8CDF1;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 2rem;
+
+    margin: 10px;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+}
+
+#delete {
+    width: 200px;
+    height: 80px;
+
+    color: #F5F5F5;
+    background-color: #B8CDF1;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 2rem;
+
+    margin: 10px;
+
+    padding-top: 5px;
+
+    box-shadow: 4px 4px 5px rgb(158, 158, 158);
+}

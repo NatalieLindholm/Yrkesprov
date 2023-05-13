@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Yrkesprov webshop</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div>
+            <img src="pingu.jpg" id="logo">
+            <h1 id="logoText">Bonk.shop</h1>
+        </div>
+        <div>
+            <h1 id="lang">En / Sve / Fi</h1>
+            <button id="logIn">Log In</button>
+        </div>
+    </nav>
+
+    <button id="basket"><i class="fa-solid fa-cart-shopping"></i></button>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="flexing">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div id="titleBox">Basket</div>
+                <div id="itemsClicked"></div>
+                <div class="buttons">
+                    <button id="delete" onclick="deleteProdukt()">Remove last item</button>
+                    <button id="close">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex">
+        <div id="item">Items</div>
+    </div>
+
+    <div id="row">
+        <div id="sellItem">
+            <img id="produkt" src="lalalapingu.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('lalalapingu.jpg')">Buy</button>
+            </div>
+        </div>
+
+        <div id="sellItem">
+            <img id="produkt" src="rat.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('rat.jpg')">Buy</button>
+            </div>
+        </div>
+
+        <div id="sellItem">
+            <img id="produkt" src="rose.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('rose.jpg')">Buy</button>
+            </div>
+        </div>
+
+        <div id="sellItem">
+            <img id="produkt" src="crocodile.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('crocodile.jpg')">Buy</button>
+            </div>
+        </div>
+
+        <div id="sellItem">
+            <img id="produkt" src="cool.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('cool.jpg')">Buy</button>
+            </div>
+        </div>
+
+        <div id="sellItem">
+            <img id="produkt" src="heh.jpg">
+            <div>
+                <p id="price">20.00</p>
+                <button id="buy" onclick="buyClick('heh.jpg')">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
