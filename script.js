@@ -1,4 +1,3 @@
-//==================================================================================================
 let modal = document.querySelector("#myModal")
 let basket = document.querySelector("#basket")
 let closeBasket = document.querySelector("#close")
